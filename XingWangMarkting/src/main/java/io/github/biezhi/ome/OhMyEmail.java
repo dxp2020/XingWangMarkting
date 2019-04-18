@@ -39,6 +39,18 @@ public class OhMyEmail {
         props.put("mail.smtp.port", "465");
         return props;
     }
+    
+    /**
+     * smtp entnterprise qq
+     *
+     * @param debug
+     * @return
+     */
+    public static Properties SMTP_YEAT(boolean debug) {
+        Properties props = defaultConfig(debug);
+        props.put("mail.smtp.host", "smtp.yeah.net");
+        return props;
+    }
 
     /**
      * smtp entnterprise qq
